@@ -1,0 +1,43 @@
+* /home/luis/Roboy/Sensors/V0.2/Vive_sensors.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Mi 12 Apr 2017 19:43:57 CEST
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+D1  17 14 BPW34		
+XU1  13 14 15 16 15 11 9 7 6 4 5 1 8 2 TL074
+R1  16 17 10k		
+R2  17 5 22k		
+R5  13 14 100k		
+R3  16 15 100k		
+R4  15 5 100k		
+C1  15 5 100n		
+C2  5 16 100n		
+C3  12 3 1u		
+R6  3 13 10k		
+R8  11 12 2.2k		
+R9  9 11 100k		
+R7  12 5 R		
+C6  4 9 1u		
+R14  7 6 22k		
+R12  4 5 12k		
+R13  6 5 10k		
+R11  16 4 82k		
+R15  1 7 1k		
+R18  2 1 100k		
+R16  16 8 10k		
+R17  8 5 10k		
+J1  10 Sgn		
+C4  5 16 1u		
+J3  5 D_GND		
+J4  16 12V		
+J5  5 GND		
+C7  13 14 22p		
+C5  9 11 22p		
+C8  8 5 100n		
+R10  10 2 27k		
+R19  5 10 10k		
+
+.end

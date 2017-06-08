@@ -1,0 +1,382 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Vive_sensors-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +5V #PWR01
+U 1 1 5880F480
+P 1800 1600
+F 0 "#PWR01" H 1800 1450 50  0001 C CNN
+F 1 "+5V" H 1800 1740 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 1800 1600 50  0000 C CNN
+F 3 "" H 1800 1600 50  0000 C CNN
+	1    1800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5880F49C
+P 1850 3200
+F 0 "#PWR02" H 1850 2950 50  0001 C CNN
+F 1 "GND" H 1850 3050 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 1850 3200 50  0000 C CNN
+F 3 "" H 1850 3200 50  0000 C CNN
+	1    1850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 5880F4BA
+P 2450 2400
+F 0 "D1" H 2470 2470 50  0000 L CNN
+F 1 "D_Photo" H 2410 2290 50  0000 C CNN
+F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 2400 2400 50  0001 C CNN
+F 3 "" H 2400 2400 50  0000 C CNN
+	1    2450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5880F5D2
+P 2150 2000
+F 0 "R1" V 2230 2000 50  0000 C CNN
+F 1 "15k" V 2150 2000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2080 2000 50  0001 C CNN
+F 3 "" H 2150 2000 50  0000 C CNN
+	1    2150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5880F64B
+P 2150 2800
+F 0 "R2" V 2230 2800 50  0000 C CNN
+F 1 "10k" V 2150 2800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2080 2800 50  0001 C CNN
+F 3 "" H 2150 2800 50  0000 C CNN
+	1    2150 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2150 2150 2650
+Wire Wire Line
+	2150 2400 2300 2400
+Connection ~ 2150 2400
+Wire Wire Line
+	1800 1750 8650 1750
+Wire Wire Line
+	2150 1750 2150 1850
+Wire Wire Line
+	2150 2950 2150 3200
+Wire Wire Line
+	1850 3200 8700 3200
+$Comp
+L R R4
+U 1 1 5880FBD5
+P 3350 2400
+F 0 "R4" V 3430 2400 50  0000 C CNN
+F 1 "10k" V 3350 2400 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3280 2400 50  0001 C CNN
+F 3 "" H 3350 2400 50  0000 C CNN
+	1    3350 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5880FC83
+P 2900 2850
+F 0 "R3" V 2980 2850 50  0000 C CNN
+F 1 "100k" V 2900 2850 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2830 2850 50  0001 C CNN
+F 3 "" H 2900 2850 50  0000 C CNN
+	1    2900 2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 3200 2900 3000
+Connection ~ 2150 3200
+Wire Wire Line
+	2600 2400 3200 2400
+Wire Wire Line
+	2900 2700 2900 2400
+Connection ~ 2900 2400
+$Comp
+L C C1
+U 1 1 5880FD31
+P 3700 2800
+F 0 "C1" H 3725 2900 50  0000 L CNN
+F 1 "33p" H 3725 2700 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3738 2650 50  0001 C CNN
+F 3 "" H 3700 2800 50  0000 C CNN
+	1    3700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5880FDCA
+P 4150 2800
+F 0 "R5" V 4230 2800 50  0000 C CNN
+F 1 "1k" V 4150 2800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4080 2800 50  0001 C CNN
+F 3 "" H 4150 2800 50  0000 C CNN
+	1    4150 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L MCP6004 U1
+U 1 1 5880FE32
+P 4700 2500
+F 0 "U1" H 4700 2700 50  0000 L CNN
+F 1 "MCP6004" H 4700 2300 50  0000 L CNN
+F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 4700 2500 50  0001 C CNN
+F 3 "" H 4700 2500 50  0000 C CNN
+	1    4700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP6004 U1
+U 2 1 5880FE85
+P 7850 2600
+F 0 "U1" H 7850 2800 50  0000 L CNN
+F 1 "MCP6004" H 7850 2400 50  0000 L CNN
+F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 7850 2600 50  0001 C CNN
+F 3 "" H 7850 2600 50  0000 C CNN
+	2    7850 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2400 4400 2400
+Wire Wire Line
+	4400 2600 4150 2600
+Wire Wire Line
+	4150 2600 4150 2650
+Wire Wire Line
+	3700 2650 3700 2400
+Connection ~ 3700 2400
+Wire Wire Line
+	3700 3200 3700 2950
+Connection ~ 2900 3200
+Wire Wire Line
+	4150 3200 4150 2950
+Connection ~ 3700 3200
+Wire Wire Line
+	4600 3200 4600 2800
+Connection ~ 4150 3200
+$Comp
+L RTRIM R6
+U 1 1 58810266
+P 4800 3000
+F 0 "R6" V 4900 2900 50  0000 L CNN
+F 1 "40k" V 4700 2975 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4730 3000 50  0001 C CNN
+F 3 "" H 4800 3000 50  0000 C CNN
+	1    4800 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 3000 4300 3000
+Wire Wire Line
+	4300 3000 4300 2600
+Connection ~ 4300 2600
+Wire Wire Line
+	5000 2500 5600 2500
+Wire Wire Line
+	5300 2500 5300 3000
+Wire Wire Line
+	5300 3000 4950 3000
+$Comp
+L C C2
+U 1 1 58810E8C
+P 5750 2500
+F 0 "C2" H 5775 2600 50  0000 L CNN
+F 1 "100n" H 5775 2400 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5788 2350 50  0001 C CNN
+F 3 "" H 5750 2500 50  0000 C CNN
+	1    5750 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 58810F56
+P 6350 2750
+F 0 "R7" V 6430 2750 50  0000 C CNN
+F 1 "10k" V 6350 2750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6280 2750 50  0001 C CNN
+F 3 "" H 6350 2750 50  0000 C CNN
+	1    6350 2750
+	-1   0    0    1   
+$EndComp
+Connection ~ 5300 2500
+Wire Wire Line
+	5900 2500 6650 2500
+Wire Wire Line
+	6350 2500 6350 2600
+Wire Wire Line
+	6350 3200 6350 2900
+Connection ~ 4600 3200
+$Comp
+L R R8
+U 1 1 58811407
+P 6800 2500
+F 0 "R8" V 6880 2500 50  0000 C CNN
+F 1 "1k" V 6800 2500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6730 2500 50  0001 C CNN
+F 3 "" H 6800 2500 50  0000 C CNN
+	1    6800 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R9
+U 1 1 58811464
+P 8050 3050
+F 0 "R9" V 8130 3050 50  0000 C CNN
+F 1 "52k" V 8050 3050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7980 3050 50  0001 C CNN
+F 3 "" H 8050 3050 50  0000 C CNN
+	1    8050 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT RV1
+U 1 1 58811C66
+P 7250 2700
+F 0 "RV1" V 7075 2700 50  0000 C CNN
+F 1 "10k" V 7150 2700 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_WirePads_Small" H 7250 2700 50  0001 C CNN
+F 3 "" H 7250 2700 50  0000 C CNN
+	1    7250 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 2500
+Wire Wire Line
+	6950 2500 7550 2500
+Wire Wire Line
+	7750 3200 7750 2900
+Connection ~ 6350 3200
+Wire Wire Line
+	8150 2600 8700 2600
+Wire Wire Line
+	8400 2600 8400 3050
+Wire Wire Line
+	8400 3050 8200 3050
+Wire Wire Line
+	7900 3050 7450 3050
+Wire Wire Line
+	7450 3050 7450 2500
+Connection ~ 7450 2500
+Wire Wire Line
+	7250 2850 7250 3200
+Connection ~ 7250 3200
+Wire Wire Line
+	7400 2700 7550 2700
+Wire Wire Line
+	4600 1750 4600 2200
+Connection ~ 2150 1750
+Wire Wire Line
+	7750 1750 7750 2300
+Connection ~ 4600 1750
+Wire Wire Line
+	7250 2550 7250 1750
+Connection ~ 7250 1750
+$Comp
+L TEST_1P W1
+U 1 1 58815743
+P 8700 2600
+F 0 "W1" H 8700 2870 50  0000 C CNN
+F 1 "Sgn_out" H 8700 2800 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 8900 2600 50  0001 C CNN
+F 3 "" H 8900 2600 50  0000 C CNN
+	1    8700 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 2600
+$Comp
+L MCP6004 U1
+U 3 1 58820BE6
+P 4650 3950
+F 0 "U1" H 4650 4150 50  0000 L CNN
+F 1 "MCP6004" H 4650 3750 50  0000 L CNN
+F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 4600 4050 50  0001 C CNN
+F 3 "" H 4700 4150 50  0000 C CNN
+	3    4650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP6004 U1
+U 4 1 58820C2D
+P 6250 4000
+F 0 "U1" H 6250 4200 50  0000 L CNN
+F 1 "MCP6004" H 6250 3800 50  0000 L CNN
+F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 6200 4100 50  0001 C CNN
+F 3 "" H 6300 4200 50  0000 C CNN
+	4    6250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1600 1800 1750
+$Comp
+L TEST_1P W2
+U 1 1 58822A43
+P 8650 1750
+F 0 "W2" H 8650 2020 50  0000 C CNN
+F 1 "Vcc" H 8650 1950 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 8850 1750 50  0001 C CNN
+F 3 "" H 8850 1750 50  0000 C CNN
+	1    8650 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P W3
+U 1 1 58822AF4
+P 8700 3200
+F 0 "W3" H 8700 3470 50  0000 C CNN
+F 1 "Gnd" H 8700 3400 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 8900 3200 50  0001 C CNN
+F 3 "" H 8900 3200 50  0000 C CNN
+	1    8700 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7750 3200
+Connection ~ 7750 1750
+$EndSCHEMATC

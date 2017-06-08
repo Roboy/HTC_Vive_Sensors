@@ -1,0 +1,19 @@
+### Module positions - created on Wed Apr 26 21:03:58 2017 ###
+### Printed by Pcbnew version kicad 4.0.6-e0-6349~53~ubuntu16.04.1
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val       Package                                PosX       PosY       Rot  Side
+5V        5V        SolderWirePad_single_SMD_1.5x3mm    13.3485    -8.1190   90.0000  bottom
+C1        100n      C_0402_NoSilk                        7.4610    -2.1100   90.0000  bottom
+C5        100n      C_0402_NoSilk                       10.8900    -6.8645  270.0000  bottom
+C8        1u        C_0402_NoSilk                        9.8740    -6.8645  270.0000  bottom
+D2        BPW34     PhotoDiode_SMD-DIL2_4.5x4            3.2700    -4.2610  270.0000  bottom
+DGND      D_GND     SolderWirePad_single_SMD_1.5x3mm     3.2700    -9.7220  270.0000  bottom
+GND       GND       SolderWirePad_single_SMD_1.5x3mm    13.3665    -5.4675   90.0000  bottom
+R1        10k       R_0402_NoSilk                        8.4770    -2.1100  270.0000  bottom
+R2        22k       R_0402_NoSilk                        6.4450    -2.1100   90.0000  bottom
+R3        1k        R_0402_NoSilk                       10.8900    -8.8965  270.0000  bottom
+R19       1k        R_0402_NoSilk                       10.8900    -2.9275   90.0000  bottom
+R20       1k        R_0402_NoSilk                       10.8900    -4.7055   90.0000  bottom
+SGN       Sgn       SolderWirePad_single_SMD_1.5x3mm    13.3485    -2.8690   90.0000  bottom
+## End
