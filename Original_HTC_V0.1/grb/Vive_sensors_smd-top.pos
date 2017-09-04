@@ -1,0 +1,33 @@
+### Module positions - created on Wed Apr 26 21:03:58 2017 ###
+### Printed by Pcbnew version kicad 4.0.6-e0-6349~53~ubuntu16.04.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val       Package                            PosX       PosY       Rot  Side
+FID01     100n      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop 0.9840    -9.7300    0.0000  top
+FID02     100n      Fiducial_1mm_Dia_2.54mm_Outer_CopperTop 14.4460    -1.3480    0.0000  top
+C2        100n      C_0402_NoSilk                    6.2140    -2.3850   90.0000  top
+C3        100n      C_0402_NoSilk                    2.7620    -1.8480  180.0000  top
+C4        10p       C_0402_NoSilk                    3.2700    -4.6420  270.0000  top
+C6        1u        C_0402_NoSilk                    2.2540    -6.3565   90.0000  top
+C7        10p       C_0402_NoSilk                    2.2540    -8.5155   90.0000  top
+C9        1u        C_0402_NoSilk                    5.6195   -10.1030  180.0000  top
+C10       100n      C_0402_NoSilk                    9.4930    -2.3560   90.0000  top
+D1        Pwr_LED   LED_0603                         9.7470   -10.1030  180.0000  top
+D3        Sgn_LED   LED_0603                        12.9220   -10.1030    0.0000  top
+R4        100k      R_0402_NoSilk                    7.2324    -2.3640  270.0000  top
+R5        100k      R_0402_NoSilk                    5.2004    -2.3640   90.0000  top
+R6        1k        R_0402_NoSilk                    2.6350    -2.8640  180.0000  top
+R7        100k      R_0402_NoSilk                    2.2540    -4.3880  270.0000  top
+R8        4.7k      R_0402_NoSilk                    3.2700    -6.6740   90.0000  top
+R9        100k      R_0402_NoSilk                    3.2700    -8.4520   90.0000  top
+R10       10k       R_0402_NoSilk                   12.6680    -7.0550   90.0000  top
+R11       10k       R_0402_NoSilk                   13.6840    -7.0550   90.0000  top
+R12       22k       R_0402_NoSilk                   13.1760    -8.4520  180.0000  top
+R13       4.7k      R_0402_NoSilk                   13.6840    -5.2770  270.0000  top
+R14       100k      R_0402_NoSilk                    8.4770    -2.3560  270.0000  top
+R15       100k      R_0402_NoSilk                   10.5090    -2.3560   90.0000  top
+R16       100k      R_0402_NoSilk                   12.6680    -5.2770  270.0000  top
+R17       1k        R_0402_NoSilk                   13.6840    -3.4990  270.0000  top
+R18       1k        R_0402_NoSilk                   12.6680    -3.4990  270.0000  top
+U1        TLV4316   TSSOP-14_4.4x5mm_Pitch0.65mm     8.0000    -6.5000    0.0000  top
+## End

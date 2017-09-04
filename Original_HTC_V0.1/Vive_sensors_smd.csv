@@ -1,0 +1,17 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"D1";"LED_0603";1;"Pwr_LED";;;
+2;"D2";"PhotoDiode_SMD-DIL2_4.5x4";1;"BPW34";;;
+3;"D3";"LED_0603";1;"Sgn_LED";;;
+4;"5V";"SolderWirePad_single_SMD_1.5x3mm";1;"5V";;;
+5;"GND";"SolderWirePad_single_SMD_1.5x3mm";1;"GND";;;
+6;"DGND";"SolderWirePad_single_SMD_1.5x3mm";1;"D_GND";;;
+7;"SGN";"SolderWirePad_single_SMD_1.5x3mm";1;"Sgn";;;
+8;"U1";"TSSOP-14_4.4x5mm_Pitch0.65mm";1;"TLV4316";;;
+9;"C1,C2,C3,C5,C10";"C_0402_NoSilk";5;"100n";;;
+10;"C4,C7";"C_0402_NoSilk";2;"10p";;;
+11;"C6,C8,C9";"C_0402_NoSilk";3;"1u";;;
+12;"R1,R10,R11";"R_0402_NoSilk";3;"10k";;;
+13;"R2,R12";"R_0402_NoSilk";2;"22k";;;
+14;"R3,R6,R17,R18,R19,R20";"R_0402_NoSilk";6;"1k";;;
+15;"R4,R5,R7,R9,R14,R15,R16";"R_0402_NoSilk";7;"100k";;;
+16;"R8,R13";"R_0402_NoSilk";2;"4.7k";;;
