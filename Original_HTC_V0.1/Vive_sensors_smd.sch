@@ -918,4 +918,26 @@ Wire Wire Line
 Wire Wire Line
 	5350 5500 5500 5500
 Connection ~ 5350 5300
+$Comp
+L TEST_1P J2
+U 1 1 59DD5686
+P 1300 1450
+F 0 "J2" H 1300 1720 50  0000 C CNN
+F 1 "GND" H 1300 1650 50  0000 C CNN
+F 2 "custom_lib:SolderWirePad_single_SMD_1.5x3mm" H 1500 1450 50  0001 C CNN
+F 3 "" H 1500 1450 50  0001 C CNN
+	1    1300 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TEST_1P J3
+U 1 1 59DD5EA4
+P 5450 1350
+F 0 "J3" H 5450 1620 50  0000 C CNN
+F 1 "3.3V" H 5450 1550 50  0000 C CNN
+F 2 "custom_lib:SolderWirePad_single_SMD_1.5x3mm" H 5650 1350 50  0001 C CNN
+F 3 "" H 5650 1350 50  0001 C CNN
+	1    5450 1350
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
