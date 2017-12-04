@@ -1,0 +1,237 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Vive_sensors_smd-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Lighthouse optical sensor (TS4231)"
+Date "2017-12-04"
+Rev "A"
+Comp "Roboy - Simon Trendel"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 59AE20AF
+P 4610 3325
+F 0 "#PWR01" H 4610 3075 50  0001 C CNN
+F 1 "GND" H 4610 3175 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 4610 3325 50  0001 C CNN
+F 3 "" H 4610 3325 50  0001 C CNN
+	1    4610 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 59AE28B7
+P 4500 2300
+F 0 "R1" V 4580 2300 50  0000 C CNN
+F 1 "15k" V 4500 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4430 2300 50  0001 C CNN
+F 3 "" H 4500 2300 50  0001 C CNN
+	1    4500 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L BPW34-SMD D1
+U 1 1 59AE3335
+P 5000 2000
+F 0 "D1" H 5020 2070 50  0000 L CNN
+F 1 "BPW34" H 4960 1890 50  0000 C CNN
+F 2 "TS4231:BPW34" H 5000 2175 50  0001 C CNN
+F 3 "" H 4950 2000 50  0000 C CNN
+	1    5000 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C1
+U 1 1 59AE3425
+P 5050 2850
+F 0 "C1" H 5075 2950 50  0000 L CNN
+F 1 "1uF" H 5075 2750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5088 2700 50  0001 C CNN
+F 3 "" H 5050 2850 50  0001 C CNN
+	1    5050 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P J2
+U 1 1 59DD5686
+P 4480 2520
+F 0 "J2" H 4480 2790 50  0000 C CNN
+F 1 "D" H 4480 2720 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 4680 2520 50  0001 C CNN
+F 3 "" H 4680 2520 50  0001 C CNN
+	1    4480 2520
+	0    1    1    0   
+$EndComp
+$Comp
+L TS4231 TS42311
+U 1 1 5A255378
+P 3900 1900
+F 0 "TS42311" H 3700 2050 60  0000 C CNN
+F 1 "TS4231" H 3700 950 60  0000 C CNN
+F 2 "TS4231:TS4231" H 3900 1900 60  0001 C CNN
+F 3 "" H 3900 1900 60  0000 C CNN
+	1    3900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P J1
+U 1 1 5A256308
+P 4480 2620
+F 0 "J1" H 4480 2890 50  0000 C CNN
+F 1 "E" H 4480 2820 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 4680 2620 50  0001 C CNN
+F 3 "" H 4680 2620 50  0001 C CNN
+	1    4480 2620
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 5A256414
+P 4375 2850
+F 0 "C2" H 4400 2950 50  0000 L CNN
+F 1 "1uF" H 4400 2750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4413 2700 50  0001 C CNN
+F 3 "" H 4375 2850 50  0001 C CNN
+	1    4375 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 1900 4400 1900
+Wire Wire Line
+	4400 1900 4400 2000
+Wire Wire Line
+	4400 2000 3900 2000
+Wire Wire Line
+	5000 2200 4350 2200
+Wire Wire Line
+	4350 2200 4350 2100
+Wire Wire Line
+	4350 2100 3900 2100
+Wire Wire Line
+	5350 1850 4000 1850
+Wire Wire Line
+	4000 1850 4000 1900
+Wire Wire Line
+	4000 1900 3900 1900
+Wire Wire Line
+	5200 2850 5350 2850
+Connection ~ 5350 2850
+Wire Wire Line
+	4100 2700 4100 2300
+Wire Wire Line
+	4100 2300 3900 2300
+Wire Wire Line
+	3900 2400 4100 2400
+Connection ~ 4100 2400
+Wire Wire Line
+	3900 2520 4480 2520
+Wire Wire Line
+	3900 2620 4480 2620
+Wire Wire Line
+	3900 2730 4080 2730
+Wire Wire Line
+	4225 2850 4080 2850
+Wire Wire Line
+	4080 2730 4080 3200
+Connection ~ 4080 2850
+Wire Wire Line
+	4650 2300 4875 2300
+Wire Wire Line
+	4875 2300 4875 2850
+Connection ~ 4875 2850
+Wire Wire Line
+	3900 2200 4245 2200
+Wire Wire Line
+	4245 2200 4245 2300
+Wire Wire Line
+	4245 2300 4350 2300
+$Comp
+L TEST_1P J4
+U 1 1 5A2592A5
+P 5350 3245
+F 0 "J4" H 5350 3515 50  0000 C CNN
+F 1 "3.3V" H 5350 3445 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 5550 3245 50  0001 C CNN
+F 3 "" H 5550 3245 50  0001 C CNN
+	1    5350 3245
+	-1   0    0    1   
+$EndComp
+$Comp
+L TEST_1P J3
+U 1 1 5A259185
+P 4490 3100
+F 0 "J3" H 4490 3370 50  0000 C CNN
+F 1 "GND" H 4490 3300 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_0-8mmDrill" H 4690 3100 50  0001 C CNN
+F 3 "" H 4690 3100 50  0001 C CNN
+	1    4490 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 2850 4525 2850
+Wire Wire Line
+	4100 2700 4610 2700
+Wire Wire Line
+	4610 2700 4610 3325
+Connection ~ 4610 2850
+Wire Wire Line
+	4490 3100 4610 3100
+Connection ~ 4610 3100
+Wire Wire Line
+	4080 3200 5350 3200
+Connection ~ 5350 3200
+Wire Wire Line
+	5350 3245 5350 1850
+$Comp
+L +3.3V #PWR02
+U 1 1 5A25591C
+P 4980 3350
+F 0 "#PWR02" H 4980 3200 50  0001 C CNN
+F 1 "+3.3V" H 4980 3490 50  0000 C CNN
+F 2 "" H 4980 3350 50  0000 C CNN
+F 3 "" H 4980 3350 50  0000 C CNN
+	1    4980 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4980 3350 4980 3200
+Wire Wire Line
+	4980 3200 4985 3200
+Connection ~ 4985 3200
+$EndSCHEMATC
